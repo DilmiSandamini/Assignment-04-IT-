@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    gap: 10px;
+}
+.menu-box{
+    width: 250px;
+    height: 60px;
+    background-color: rgb(155, 59, 245);
+    margin-left:-200px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 255,0.4);
+}
+
+.menu-box:hover{
+    transition-duration: 1.5s;
+    transform: translateX(200px);
+    
+}
+
+.menu{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 90px;
+}
+
+img{
+   width: 35px; 
+   height: 35px;
+}
