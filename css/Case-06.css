@@ -1,0 +1,106 @@
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .container > img {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    object-fit: cover;
+  }
+  
+  .city-view {
+    width: 300vw;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .city {
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    animation: car-ride 10s ease-in-out 1s infinite;
+  }
+
+  @keyframes car-ride {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200vw);
+    }
+  }
+  
+  #frame02 {
+    left: 100vw;
+  }
+  #frame03 {
+    left: 200vw;
+  }
+  
+  .city > img {
+    height: 25vh;
+    width: 100vw;
+  }
+  
+
+  .car > img {
+    width: 100%;
+  }
+
+  .car {
+    width: 20vw;
+
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+  }
+  
+  img[alt="wheel image 1"] {
+    left: 8%;
+    top: 50%;
+  }
+  
+  img[alt="wheel image 2"] {
+    left: 70%;
+    top: 50%;
+  }
+
+  .wheels > img {
+    width: 4vw;
+
+    position: absolute;
+    animation-delay: 1s;
+    animation: wheel-rotate 10s ease-in-out infinite;
+  }
+  
+  @keyframes wheel-rotate {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(-360deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  
